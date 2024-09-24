@@ -8,6 +8,10 @@ Devoir pour le cours Renforcement JS
 2. **MongoDB** :
    - **MongoDB Server** : Téléchargez et installez MongoDB Server à partir de [mongodb.com](https://www.mongodb.com/try/download/community) si vous prévoyez d'exécuter MongoDB localement.
    - **MongoDB Compass** : Utilisez MongoDB Compass pour interagir graphiquement avec la base de données, téléchargeable [ici](https://www.mongodb.com/products/compass).
+   - Selon la version de votre ordinateur, utilisez la commande appropriée pour démarrer MongoDB. Par exemple, sur macOS, vous pouvez utiliser la commande suivante pour démarrer MongoDB après l'installation avec Homebrew :
+     ```bash
+     brew services start mongodb/brew/mongodb-community@6.0
+     ```
 
 ## Niveau 0
 ### Fonctionnalités de Niveau 0:
@@ -17,6 +21,8 @@ Devoir pour le cours Renforcement JS
 Exécutez les commandes suivantes dans le terminal pour démarrer le projet :
 ```bash
 npm install
+npm install express
+npm install mongodb
 npm start
 ```
    
@@ -32,5 +38,7 @@ Comme la base de données `renforcement` et la collection `tasks` ont déjà ét
 Exécutez les commandes suivantes dans le terminal pour démarrer le projet :
 ```bash
 npm install
+npm install express
+npm install mongodb
 npm start
 ```
