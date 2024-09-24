@@ -1,33 +1,10 @@
-# Projet : Gestion des tâches
-
-## Installation
-
-1. Téléchargez le fichier zip du projet à partir de GitHub.
-2. Ouvrez un éditeur de code tel que **Visual Studio Code** ou un terminal à l'endroit où les fichiers sont extraits.
-
-## Importation des données dans MongoDB Compass
-
-Importer les données fournies au format JSON dans votre propre base de données MongoDB. Le fichier JSON se trouve dans le dossier **bd** du projet.
-
-## Modification de l'URI dans le projet
-
-Après avoir importé les données, il faut configurer correctement l'URI MongoDB dans le fichier `db_utils.js` pour que l'application puisse se connecter à la base de données.
-
-###  pour MongoDB localement :
-Modifiez l'URI dans le fichier `db_utils.js` :
-```javascript
-const uri = "mongodb://localhost:27017/nom_de_votre_base";
-```
-
-###  pour MongoDB Atlas, configurez URI en remplaçant les éléments nécessaires :
-```bash
-const uri = "mongodb+srv://<username>:<password>@cluster0.mongodb.net/";
-```
-
-## Commandes
-
+## Niveau 0
+### Fonctionnalités de Niveau 0:
+1. Lorsque vous exécutez le programme, une base de données nommée `renforcement` ainsi qu'une collection `tasks` seront automatiquement créées dans MongoDB.
+2. Vous verrez un tableau de planification où la colonne de gauche affiche les dates et la colonne de droite les tâches associées. Vous pouvez ajouter ou supprimer des tâches et des dates directement depuis ce tableau interactif.
+### Commandes pour Niveau 1 
 Exécutez les commandes suivantes dans le terminal pour démarrer le projet :
-
 ```bash
 npm install
 npm start
+```
