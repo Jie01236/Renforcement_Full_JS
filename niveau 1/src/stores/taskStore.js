@@ -39,19 +39,29 @@ export const useTaskStore = defineStore('taskStore', {
       }
     },
     async login(username, password) {
+      try {
         const response = await fetch('http://localhost:3000/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        credentials: 'include',
-        body: JSON.stringify({ username, password }),
-      });
-      const data = await response.json();
-      if (response.ok) {
-        this.user = username;
-        return true;
-      } else {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          credentials: 'include',
+          body: JSON.stringify({ username, password }),
+        });
+        if (!response.ok) {
+          this.user = null;
+          return false;
+        }
+        const data = await response.json();
+        if (data.message === 'Connexion réussie') {
+          this.user = username;
+          return true;
+        } else {
+          this.user = null;
+          return false;
+        }
+      } catch (error) {
+        console.error("Erreur lors de la connexion:", error);
         this.user = null;
         return false;
       }
