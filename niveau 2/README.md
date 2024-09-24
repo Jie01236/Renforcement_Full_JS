@@ -6,7 +6,7 @@ Comme la base de données `renforcement` et la collection `tasks` ont déjà ét
 2. Gestion des tâches :
   - Une fois connecté, vous pouvez ajouter, consulter et supprimer des tâches associées à votre utilisateur.
 
-### Commandes pour Niveau 1 
+### Commandes pour Niveau 1 &2 :
 Exécutez les commandes suivantes dans le terminal pour démarrer le projet :
 ```bash
 npm install
