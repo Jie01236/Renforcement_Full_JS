@@ -10,5 +10,7 @@ Comme la base de données `renforcement` et la collection `tasks` ont déjà ét
 Exécutez les commandes suivantes dans le terminal pour démarrer le projet :
 ```bash
 npm install
+npm install express
+npm install mongodb
 npm start
 ```
