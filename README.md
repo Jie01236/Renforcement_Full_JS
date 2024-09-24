@@ -14,10 +14,10 @@ Devoir pour le cours Renforcement JS
      ```
 
 ## Niveau 0
-### Fonctionnalités de Niveau 0:
+### Fonctionnalités de Niveau 0 :
 1. Lorsque vous exécutez le programme, une base de données nommée `renforcement` ainsi qu'une collection `tasks` seront automatiquement créées dans MongoDB.
 2. Vous verrez un tableau de planification où la colonne de gauche affiche les dates et la colonne de droite les tâches associées. Vous pouvez ajouter ou supprimer des tâches et des dates directement depuis ce tableau interactif.
-### Commandes pour Niveau 1 
+### Commandes pour Niveau 0 : 
 Exécutez les commandes suivantes dans le terminal pour démarrer le projet :
 ```bash
 npm install
@@ -28,13 +28,13 @@ npm start
    
 ## Niveau 1
 Comme la base de données `renforcement` et la collection `tasks` ont déjà été créées lors du niveau 0, il n'a pas besoin de recréer ou de réinitialiser la base de données pour le niveau 1.
-### Fonctionnalités de Niveau:
+### Fonctionnalités de Niveau 1 :
 1. Inscription et connexion utilisateur :
   - Vous pouvez créer un compte, vous connecter et gérer des tâches une fois connecté.
 2. Gestion des tâches :
   - Une fois connecté, vous pouvez ajouter, consulter et supprimer des tâches associées à votre utilisateur.
 
-### Commandes pour Niveau 1 &2 :
+### Commandes pour Niveau 1 :
 Exécutez les commandes suivantes dans le terminal pour démarrer le projet :
 ```bash
 npm install
@@ -45,7 +45,7 @@ npm start
 
 ## Niveau 2
 Comme la base de données `renforcement` et la collection `tasks` ont déjà été créées lors du niveau 0, il n'a pas besoin de recréer ou de réinitialiser la base de données pour le niveau 1.
-### Fonctionnalités de Niveau:
+### Fonctionnalités de Niveau 2 :
 1. Inscription et connexion utilisateur :
   - Vous pouvez créer un compte, vous connecter et gérer des tâches une fois connecté.
 2. Gestion des tâches :
@@ -80,7 +80,7 @@ Exécutez les commandes suivantes dans le terminal:
     npm run test:backend
    ```
 4. Tests unitaires frontend
- ```bash
+    ```bash
    npm run test:frontend
    ```
 5. Tests end-to-end avec Cypress 
